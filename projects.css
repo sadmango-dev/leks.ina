@@ -1,0 +1,97 @@
+body {
+    background-color: rgb(203, 229, 235);
+    padding-left:30px;
+    padding-right:60px;
+  }
+
+#page-container{
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap{
+    padding-bottom: 2.5rem;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(55, 88, 168);
+    margin-top:20px;
+    padding:10px;
+    color:white;
+    width: 100%;
+    height: 2.5rem;
+}
+
+.mycontainer {
+    display: flex;
+    padding: 10px;
+    margin-top: -15px;
+    margin-left: -30px;
+}
+.mycontainer > div {
+    margin: 20px;
+    margin-right: 40px;
+    font-family: verdana;
+    font-weight: bold;
+}
+
+header {
+    text-align: left;
+    padding: 0px;
+    padding-bottom: 0px;
+}
+
+a:link {
+    color: rgb(6, 0, 128);
+    background-color: transparent;
+    text-decoration: none;
+}
+  
+a:visited {
+    color: rgb(6, 0, 128);
+    background-color: transparent;
+    text-decoration: none;
+}
+  
+a:hover {
+    color: purple;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.project-list{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.project-item{
+    text-align: center;
+    font-family: Verdana;
+}
+
+.title-project{
+    text-decoration: underline;
+}
+
+.education-list{
+    margin-top: 15px;
+    text-align: center;
+}
+
+.education-list > div{
+    margin-bottom: 40px;
+}
+
+p{
+    font-family: Verdana;
+}
+
+h3{
+    font-family: Verdana;
+}
+
+h2{
+    font-family: Verdana;
+}
