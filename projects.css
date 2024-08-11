@@ -95,3 +95,9 @@ h3{
 h2{
     font-family: Verdana;
 }
+
+.project-description{
+    margin-left: 160px;
+    margin-right: 160px;
+    text-align: center;
+}
