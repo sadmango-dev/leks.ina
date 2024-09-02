@@ -4,13 +4,33 @@
         <title>Katya's Website</title>
         <link rel="stylesheet" href="../projects.css">
         <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
 <body>
     <div id="page-container">
     <div id="content-wrap">
     <header>
         <h1 style="font-family:verdana;">Ekaterina Leksina</h1>
-        <pre>W(o/a)ndering a(b/r)ou(t/nd) the world with curiosity</pre>
+        <pre>W(<span id="words1">o</span>)ndering a(<span id="words2">b</span>)ou(<span id="words3">t </span>) the world with curiosity</pre>
+        <script>
+            (function () {
+            var words1 = ["o", "a"],
+                words2 = ["r", "b"],
+                words3 = ["t ", "nd"];
+            i = 0;
+                setInterval(function(){ 
+                    $('#words1').fadeOut(function(){
+                        $(this).html(words1[(i = (i + 1) % words1.length)]).fadeIn();
+                    }); 
+                    $('#words2').fadeOut(function(){
+                        $(this).html(words2[(i = (i + 1) % words2.length)]).fadeIn();
+                    }); 
+                    $('#words3').fadeOut(function(){
+                        $(this).html(words3[(i = (i + 1) % words3.length)]).fadeIn();
+                    }); 
+                }, 2500)
+            })();
+        </script>
     </header>
     
     <div class="mycontainer">
@@ -40,7 +60,10 @@
             When I encountered a problem, Stack was my main go-to. I was very passionate in the beginning about setting it up and running, so was devoting lots of time to it; 
             now I'm taking this a bit slower and gradually updating the website in my free time. This project also prompted me to learn how to use Github, so that 
             I can update it straight from the laptop. <br><br> If you have any suggestions
-            or recommendations on how to make it better - feel free to reach out, I gladly appreciate critique. 
+            or recommendations on how to make it better - feel free to reach out, I gladly appreciate critique. <br><hr><br>
+            Upd (2/09/24): Following your suggestions made a small animation of letters changing. This is actually quite fun,
+            I enjoyed implementing this. I was a fan of the minimalism of the unanimated text, but actually might add this 
+            to the rest of the website :) 
         </p>
     </div>
     <footer>
