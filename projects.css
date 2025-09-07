@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(203, 229, 235);
+    background-color: rgb(228, 238, 240);
     padding-left:30px;
     padding-right:60px;
   }
@@ -139,26 +139,26 @@ display: none;
     color: #37352f;
 }
 
-        /* Rotate the chevron when checkbox is checked */
-        .toggle-input:checked + .toggle-label::before {
-            transform: rotate(90deg);
-        }
+/* Rotate the chevron when checkbox is checked */
+.toggle-input:checked + .toggle-label::before {
+    transform: rotate(90deg);
+}
 
-        /* Content that will be shown/hidden */
-        .toggle-content {
-            display: none;
-            padding-left: 24px;
-            border-left: 1px solid #e9e9e7;
-            margin-left: 8px;
-            font-size: 14px;
-        }
+/* Content that will be shown/hidden */
+.toggle-content {
+    display: none;
+    padding-left: 24px;
+    border-left: 1px solid #e9e9e7;
+    margin-left: 8px;
+    font-size: 14px;
+}
 
-        /* Show content when checkbox is checked */
-        .toggle-input:checked ~ .toggle-content {
-            display: block;
-        }
+/* Show content when checkbox is checked */
+.toggle-input:checked ~ .toggle-content {
+    display: block;
+}
 
-        /* Hover effect */
-        .toggle-label:hover {
-            background-color: #afc4d9;
-        }
+/* Hover effect */
+.toggle-label:hover {
+    background-color: #afc4d9;
+}
