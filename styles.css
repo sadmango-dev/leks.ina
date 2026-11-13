@@ -268,3 +268,67 @@ footer {
     background-color: rgb(55, 88, 168);
     color: white;
 }
+
+.about {
+    width: 50%;
+    margin-left: 5px;
+}
+
+@media (max-width: 700px) {
+    body {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .about {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .about p {
+        padding-right: 0 !important;   /* overrides the inline padding-right: 30px */
+    }
+
+    /* nav: let the links wrap onto a second line instead of running off-screen */
+    .mycontainer {
+        flex-wrap: wrap;
+        margin-left: -10px;
+    }
+    .mycontainer > div {
+        margin: 6px 10px;
+    }
+
+    /* the footer is fixed, so leave room so it doesn't cover the contacts */
+    #content-wrap {
+        padding-bottom: 80px;
+    }
+}
+/* ==========================================================================
+   8. Flowers!!
+   ========================================================================== */
+.flowers {
+    position: fixed;        /* use "absolute" if they should scroll with the page */
+    inset: 0;
+    pointer-events: none;   /* clicks go through to links underneath */
+    z-index: -1;            /* sits behind your text */
+  }
+  
+  .flower {
+    position: absolute;
+    height: auto;
+    /* scales with the screen, but never smaller than 80px or bigger than 260px */
+    width: clamp(80px, 16vw, 260px);
+    opacity: 0.80;
+  }
+  
+  .f1 { top: 20%;    left: 3%;   transform: rotate(-12deg); }
+  .f2 { top: 40%;   right: 6%;  transform: rotate(8deg); }
+  .f3 { bottom: 4%; left: 6%;   width: clamp(60px, 10vw, 180px); }
+  
+  /* On phones the text fills the screen, so shrink them, fade them, or hide some */
+  @media (max-width: 700px) {
+    .flower { opacity: 0.80; width: 26vw; }
+    
+    .f1 {right: 4%; top: 70%}
+    .f2 {top: 65%}
+  }
